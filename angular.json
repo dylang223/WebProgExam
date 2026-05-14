@@ -25,9 +25,8 @@
               }
             ],
             "styles": [
-             "node_modules/bootstrap/scss/bootstrap.scss",
-"node_modules/bootstrap-icons/font/bootstrap-icons.css"
-
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ]
           },
           "configurations": {
@@ -68,6 +67,9 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
